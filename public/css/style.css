@@ -114,7 +114,6 @@ body{
 }
 
 body,html {
-  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -314,7 +313,6 @@ img:hover {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: inline-block;
   float: left;
 }
 

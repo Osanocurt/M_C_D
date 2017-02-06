@@ -1,0 +1,25 @@
+<section>
+  <form  novalidate ng-submit="login.submit()" >
+    <input type="email" name="email" class="login-input" placeholder="Email Address" ng-model="login.credentials.email">
+    <input type="password" name="password" placeholder="Password" ng-model="login.credentials.password">
+    <button type="submit" value="Login" class="login-submit">Login</button>
+    <button type="submit" value="Login" class="login-submit" ng-click="login.authenticate('facebook')"> Login with Facebook</button>
+    <p class="login-help"><a href="#">Forgot password?</a></p>
+    <!-- <button ng-click="login.authenticate('github')"> Login with Github</button> -->
+ </form>
+</section>
+
+
+
+<!-- <form novalidate ng-submit="login.submit()">
+  <div class="row">
+    <label>Email</label>
+    <input class="u-full-width" type="email" placeholder="Email" ng-model="login.credentials.email">
+  </div>
+  <div class="row">
+    <label>Password</label>
+    <input class="u-full-width" type="password" placeholder="Password" ng-model="login.credentials.password">
+  </div>
+
+  <button>Login</button>
+</form> -->

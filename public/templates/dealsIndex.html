@@ -1,0 +1,13 @@
+<div class="section group">
+	<div style="float:left;"class="col span_1_of_5">
+    <ul ng-repeat="deal in dealsIndex.all" class="flex cards">
+      <a ui-sref ="dealsShow({ id: deal._id })">
+      <li><h2>{{ deal.title }}</h2>
+        <img class="img-responsive" ng-src="{{ deal.posterImage }}">
+        <p>{{ deal.category }}</p>
+        <p>{{ deal.brand }}</p>
+        <p>{{ deal.expiryDate | date: 'd MMM yyyy' }}</p>
+      </li>
+    </ul>
+	</div>
+</div>

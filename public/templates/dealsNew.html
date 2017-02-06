@@ -1,0 +1,25 @@
+<section class="row">
+  <form ng-submit="dealsNew.create()">
+    <div class="twelve columns">
+      <label>Title</label>
+      <input type="text" name="title" placeholder="Title" ng-model="dealsNew.deal.title" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Category</label>
+      <input type="text" name="category" placeholder="Category" ng-model="dealsNew.deal.category" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Brand</label>
+      <input type="text" name="brand" placeholder="Brand" ng-model="dealsNew.deal.brand" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Expiry Date</label>
+      <input type="text" name="expiryDate" placeholder="Expiry Date" ng-model="dealsNew.deal.expiryDate" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Poster Image</label>
+      <input type="text" name="posterImage" placeholder="Poster Image" ng-model="dealsNew.deal.posterImage" class="u-full-width">
+    </div>
+    <button>Create</button>
+  </form>
+</section>

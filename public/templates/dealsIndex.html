@@ -1,4 +1,4 @@
-<div class="section group">
+<!-- <div class="section group">
 	<div class="col span_1_of_5">
     <ul ng-repeat="deal in dealsIndex.all" class="flex cards">
       <a ui-sref ="dealsShow({ id: deal._id })">
@@ -10,4 +10,19 @@
       </li>
     </ul>
 	</div>
+</div> -->
+
+<div ng-repeat="deal in dealsIndex.all" class="cards">
+  <div a ui-sref ="dealsShow({ id: deal._id })"
+ class="card">
+    <header>
+      <h2>{{ deal.title }}</h2>
+    </header>
+    <img ng-src="{{ deal.posterImage }}">
+    <div class="body">
+      <p>{{ deal.category }}</p>
+      <p>{{ deal.brand }}</p>
+      <p>{{ deal.expiryDate | date: 'd MMM yyyy' }}</p>
+    </div>
+  </div>
 </div>

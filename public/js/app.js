@@ -14,6 +14,10 @@ function Router($stateProvider, $urlRouterProvider) {
     url: '/about',
     templateUrl: '/templates/about.html'
   })
+  .state('home', {
+    url: '/home',
+    templateUrl: '/templates/home.html'
+  })
     .state('dealsIndex', {
       url: '/deals',
       templateUrl: '/templates/dealsIndex.html',
@@ -44,9 +48,6 @@ function Router($stateProvider, $urlRouterProvider) {
       templateUrl: '/templates/login.html',
       controller: 'LoginController as login'
     });
-
-
-
 
   $urlRouterProvider.otherwise('/landing');
 }

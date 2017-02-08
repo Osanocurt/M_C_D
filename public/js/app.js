@@ -10,6 +10,10 @@ function Router($stateProvider, $urlRouterProvider) {
     url: '/landing',
     templateUrl: '/templates/landing.html'
   })
+  .state('about', {
+    url: '/about',
+    templateUrl: '/templates/about.html'
+  })
     .state('dealsIndex', {
       url: '/deals',
       templateUrl: '/templates/dealsIndex.html',

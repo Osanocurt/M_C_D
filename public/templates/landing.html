@@ -9,6 +9,6 @@ Restaurants, cafes, bars, pop up’s and shops.
 </h3>
  <br>
  <br>
- <button ng-if="!main.isLoggedIn()"><a ui-sref="register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></button>
- <button ng-if="!main.isLoggedIn()"><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></button>
+ <button type="button" class="btn btn-default" ng-if="!main.isLoggedIn()"><a ui-sref="register"> Sign Up</a></button>
+ <button type="button" class="btn btn-default" ng-if="!main.isLoggedIn()"><a ui-sref="login">Login</a></button>
 </div>

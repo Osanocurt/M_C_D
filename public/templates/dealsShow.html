@@ -5,6 +5,6 @@
   <h4>{{ dealsShow.deal.brand }}</h4>
   <p>{{ dealsShow.deal.expiryDate | date: 'd MMM yyyy' }}</p>
 
-  <a ng-if="dealsShow.isLoggedIn()" ui-sref="dealsEdit({ id: dealsShow.deal._id })" class="button">Edit</a>
+  <button ng-if="dealsShow.isLoggedIn()" ui-sref="dealsEdit({ id: dealsShow.deal._id })" class="button">Edit</button>
   <button  ng-if="dealsShow.isLoggedIn()" ng-click="dealsShow.delete()">Delete</button>
 </section>

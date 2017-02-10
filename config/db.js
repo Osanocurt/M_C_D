@@ -1,3 +1,3 @@
 module.exports = {
-  uri: pcess.env.MONGODB_URI || 'mongodb://localhost/restful-angular'
+  uri: process.env.MONGODB_URI || 'mongodb://localhost/restful-angular'
 };

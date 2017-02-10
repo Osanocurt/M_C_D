@@ -31,7 +31,7 @@ ArticlesShowController.$inject = ['Article', '$state', '$auth'];
 function ArticlesShowController(Article, $state, $auth) {
   const articlesShow = this;
 
-  articlesShow.article = article.get($state.params);
+  articlesShow.article = Article.get($state.params);
 
   function deleteArticle() {
     articlesShow.article.$remove(() => {

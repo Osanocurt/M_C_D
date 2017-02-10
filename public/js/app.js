@@ -28,6 +28,16 @@ function Router($stateProvider, $urlRouterProvider) {
     templateUrl: '/templates/articlesNew.html',
     controller: 'ArticlesNewController as articlesNew'
   })
+  .state('articlesShow', {
+    url: '/articles/:id',
+    templateUrl: '/templates/articlesShow.html',
+    controller: 'ArticlesShowController as articlesShow'
+  })
+  .state('articlesEdit', {
+    url: '/articles/:id/edit',
+    templateUrl: '/templates/articlesEdit.html',
+    controller: 'ArticlesEditController as articlesEdit'
+  })
     .state('dealsIndex', {
       url: '/deals',
       templateUrl: '/templates/dealsIndex.html',

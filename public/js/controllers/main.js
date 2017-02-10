@@ -18,7 +18,7 @@ function MainController($auth, $state, $rootScope) {
     });
 
   }
-  const protectedStates = ['dealsEdit', 'dealsNew'];
+  const protectedStates = ['dealsEdit', 'dealsNew' ,'articlesEdit','articlesNew'];
 
   function secureState(e, toState) {
     main.message = null;

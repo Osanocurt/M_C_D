@@ -30,6 +30,8 @@
        <li ng-if="main.isLoggedIn()"><a ui-sref="dealsIndex" ui-sref-active="active">Deals</a></li>
        <li ng-if="main.isLoggedIn()"><a ui-sref="about" ui-sref-active="active">About</a></li>
        <li ng-if="main.isLoggedIn()"><a ui-sref="dealsNew" ui-sref-active="active">Create</a></li>
+       <li ng-if="main.isLoggedIn()"><a ui-sref="articlesIndex" ui-sref-active="active">Articles</a></li>
+       <li ng-if="main.isLoggedIn()"><a ui-sref="articlesNew" ui-sref-active="active">New Article</a></li>
        <!-- <li ng-if="!main.isLoggedIn()"><a ui-sref="register" ui-sref-active="active">Register</a></li> -->
        <!-- <li ng-if="!main.isLoggedIn()"><a ui-sref="login" ui-sref-active="active">Login</a></li> -->
        <li  ng-if="main.isLoggedIn()"><a ng-click="main.logout()">Logout</a></li>

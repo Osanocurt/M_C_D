@@ -1,5 +1,5 @@
 
-<div class="cards" ng-repeat="deal in dealsIndex.all" style="width:20%; height:20%; margin:0.5%;">
+<!-- <div class="cards" ng-repeat="deal in dealsIndex.all" style="width:20%; height:20%; margin:0.5%;">
   <div a ui-sref ="dealsShow({ id: deal._id })"
  class="card">
     <header>
@@ -11,5 +11,16 @@
       <p>{{ deal.brand }}</p>
       <p>{{ deal.expiryDate | date: 'd MMM yyyy' }}</p>
     </div>
+  </div>
+</div>
+ -->
+<div class="card" style="width: 20rem; float:left; margin:0.3%; background-color:white;" ng-repeat="deal in dealsIndex.all" a ui-sref ="dealsShow({ id: deal._id })">
+  <img class="card-img-top" src="{{ deal.posterImage }}" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">{{ deal.title }}</h4>
+    <p class="card-text">
+    <p>{{ deal.category }}</p>
+    <p>{{ deal.brand }}</p>
+    <p>{{ deal.expiryDate | date: 'd MMM yyyy' }}</p></p>
   </div>
 </div>

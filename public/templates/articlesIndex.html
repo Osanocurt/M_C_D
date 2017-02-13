@@ -1,12 +1,11 @@
-<div class="card-group" style="width: 20rem; margin:0.3%;background-color:white;" ng-repeat="article in articlesIndex.all" a ui-sref ="articlesShow({ id: article._id })">
-  <div class="card">
-    <img src="{{ article.posterImage }}" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">{{ article.text }}</p>
+<section style="width:100%;">
+  <article ng-repeat="article in articlesIndex.all" a ui-sref ="articlesShow({ id: article._id })">
+    <div class="image">
+      <img src="{{ article.posterImage }}" alt="" />
     </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+    <div class="overlay"></div>
+    <div class="content">
+      <p>{{ article.text }}</p>
     </div>
-  </div>
-</div>
+  </article>
+</section>

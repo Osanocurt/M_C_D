@@ -1,8 +1,8 @@
 <section class="row">
   <form ng-submit="articlesEdit.update()">
-    <div class="twelve columns">
-      <label>Text</label>
-      <input type="text" name="category" placeholder="Category" ng-model="articlesEdit.article.text" class="u-full-width">
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea ng-model="articlesEdit.article.text" class="form-control" rows="5" id="comment"></textarea>
     </div>
     <div class="twelve columns">
       <label>Image</label>

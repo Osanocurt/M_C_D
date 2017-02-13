@@ -1,11 +1,9 @@
-<section style="width:100%;">
-  <article ng-repeat="article in articlesIndex.all" a ui-sref ="articlesShow({ id: article._id })">
-    <div class="image">
-      <img src="{{ article.posterImage }}" alt="" />
-    </div>
-    <div class="overlay"></div>
-    <div class="content">
-      <p>{{ article.text }}</p>
-    </div>
-  </article>
-</section>
+<div class="box" ng-repeat="article in articlesIndex.all" a ui-sref ="articlesShow({ id: article._id })">
+  <div class="box-image">
+     <img class="img-responsive" src="{{ article.posterImage }}" alt="" />
+  </div>
+  <div class="box-content">
+    <h2>Title</h2>
+    <p>{{ article.text }}</p>
+  </div>
+</div>
